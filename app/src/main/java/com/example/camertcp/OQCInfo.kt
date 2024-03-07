@@ -8,10 +8,10 @@ object OQCInfo {
     const val HEADER_NAME_SIZE = 8
     const val HEADER_VERSION_SIZE = 4
 
-    const val HEADER_NAME = "Name"
-    const val HEADER_VERSION = "Version"
-    const val HEADER_CODE = "Code"
-    const val HEADER_BODY_SIZE = "BodySize"
+    const val EXCEPTION = "Exception"
+    const val CONNECT_EXCEPTION = "ConnectException"
+    const val UNKNOWN_HOST_EXCEPTION = "UnknownHostException"
+    const val SOCKET_EXCEPTION = "SocketException"
 
     const val HEADER_NAME_VALUE = "CCTVCODE"
     const val HEADER_VERSION_VALUE = "0010"
@@ -20,6 +20,8 @@ object OQCInfo {
 
     const val TYPE_CHAR = "Char"
     const val TYPE_INT = "Unsigned int"
+    const val TYPE_UINT8 = "UINT8"
+    const val TYPE_INT16 = "INT16"
 
     const val FIELD_NAME_SN = "SN"
     const val FIELD_NAME_MSG = "Msg"
@@ -28,6 +30,11 @@ object OQCInfo {
     const val FIELD_NAME_MODEL = "Model"
     const val FIELD_NAME_FW_VERSION = "FW Version"
     const val FIELD_NAME_HW_VERSION = "HW Version"
+    const val FIELD_NAME_COUNT = "Count"
+    const val FIELD_NAME_AP_SSID = "AP SSID"
+    const val FIELD_NAME_CHANNEL_NUMBER = "Channel Number"
+    const val FIELD_NAME_ENCRYPTION_METHOD = "암호화 방식"
+    const val FIELD_NAME_RSSI = "RSSI"
 
     const val CODE_REQUEST_AP_INFO = 104
     const val CODE_CHANGE_SN = 1003
@@ -37,4 +44,9 @@ object OQCInfo {
     const val CODE_REQUEST_BELL = 1102
 
     const val BODY_SIZE_DEFAULT = 0
+
+    const val MESSAGE_SUCCESS = "Success"
+    const val MESSAGE_FAIL = "Fail"
+    const val MESSAGE_REQUEST_CONNECT = "Please Connect"
+    const val MESSAGE_ALREADY_CONNECT = "Already Connect"
 }
